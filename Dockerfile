@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.6-alpine
 ADD . /code
 WORKDIR /code
 COPY ./scrapydweb_settings_v8.py /code
