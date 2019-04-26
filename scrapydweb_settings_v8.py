@@ -78,8 +78,6 @@ SCRAPY_PROJECTS_DIR = ''
 #     ('username', 'password', 'localhost', '6801', 'group'),
 # ]
 SCRAPYD_SERVERS = [
-    '你的scrapyd服务器ip:6800',
-    '你的scrapyd服务器ip:6801'
 ]
 
 # If both ScrapydWeb and one of your Scrapyd servers run on the same machine,
