@@ -1,6 +1,6 @@
-FROM python:3.6-alpine
-ADD . /code
-WORKDIR /code
+FROM python:3.6-slim
+ADD . /app
+WORKDIR /app
 COPY ./scrapydweb_settings_v8.py /code
 EXPOSE 5000
 RUN pip3 install -r requirements.txt

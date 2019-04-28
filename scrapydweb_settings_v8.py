@@ -5,7 +5,7 @@ BROWSER_HOST <<<>>> SCRAPYDWEB_BIND:SCRAPYDWEB_PORT <<<>>> your SCRAPYD_SERVERS
 
 GitHub: https://github.com/my8100/scrapydweb
 """
-
+import os
 
 ###############################################################################
 ###############################################################################
@@ -77,13 +77,7 @@ SCRAPY_PROJECTS_DIR = ''
 #     # 'username:password@localhost:6801#group',
 #     ('username', 'password', 'localhost', '6801', 'group'),
 # ]
-SCRAPYD_SERVERS = [
-    'http://scrapyd-1:6800',
-    'http://scrapyd-2:6800',
-    'http://scrapyd-3:6800',
-    'http://scrapyd-4:6800',
-    'http://scrapyd-5:6800'
-]
+SCRAPYD_SERVERS = os.getenv("SCRAPYD_SERVERS").split(',')
 
 # If both ScrapydWeb and one of your Scrapyd servers run on the same machine,
 # ScrapydWeb would try to directly read Scrapy logfiles from disk, instead of making a request
