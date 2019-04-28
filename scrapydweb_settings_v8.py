@@ -31,8 +31,8 @@ SCRAPYDWEB_PORT = 5000
 # The default is False, set it to True to enable basic auth for web UI.
 ENABLE_AUTH = True
 # In order to enable basic auth, both USERNAME and PASSWORD should be non-empty strings.
-USERNAME = 'admin'
-PASSWORD = 'admin'
+USERNAME = os.getenv("USERNAME", 'admin')
+PASSWORD = os.getenv("PASSWORD", 'admin')
 
 # The default is False, set it to True and add both CERTIFICATE_FILEPATH and PRIVATEKEY_FILEPATH
 # to run ScrapydWeb in HTTPS mode.
