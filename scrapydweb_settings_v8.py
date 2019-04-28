@@ -78,6 +78,11 @@ SCRAPY_PROJECTS_DIR = ''
 #     ('username', 'password', 'localhost', '6801', 'group'),
 # ]
 SCRAPYD_SERVERS = [
+    'http://scrapyd-1:6800',
+    'http://scrapyd-2:6800',
+    'http://scrapyd-3:6800',
+    'http://scrapyd-4:6800',
+    'http://scrapyd-5:6800'
 ]
 
 # If both ScrapydWeb and one of your Scrapyd servers run on the same machine,
